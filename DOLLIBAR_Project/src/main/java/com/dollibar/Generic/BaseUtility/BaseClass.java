@@ -4,7 +4,6 @@ import java.sql.SQLException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
@@ -17,10 +16,10 @@ import org.testng.annotations.BeforeSuite;
 import com.dollibar.FileUtility.FileUtility;
 import com.dollibar.Generic.DataBaseUtility.DataBaseUtility;
 import com.dollibar.ListenerUtility.UtilityClassObject;
-import com.dollibar.ObjectRepositoryUtility.HomePage;
-import com.dollibar.ObjectRepositoryUtility.LoginPage;
 import com.dollibar.WebDriverUtility.JavaUtility;
 import com.dollibar.WebDriverUtility.WebDriverUtility;
+import com.dollibar.pom.pages.HomePage;
+import com.dollibar.pom.pages.LoginPage;
 
 
 public class BaseClass {
@@ -64,18 +63,19 @@ public class BaseClass {
 	@BeforeMethod(alwaysRun = true)
 	public void configureBM() throws Throwable {
 		System.out.println("==log in==");
-	    LoginPage l=new LoginPage(driver);
+	    LoginPage lp=new LoginPage(driver);
 		String URL = f.getDataFromPropertiesFile("url");
 		String USERNAME = f.getDataFromPropertiesFile("username");
 		String PASSWORD = f.getDataFromPropertiesFile("password");
 		driver.get("http://49.249.28.218:8889/dolibarr/");
-		l.logintoapp(USERNAME, PASSWORD);
+		lp.LogintoApp(USERNAME, PASSWORD);
 	}
 
 	@AfterMethod(alwaysRun = true)
 	public void configureAM() {
 		System.out.println("==log out==");
-		HomePage hp = new HomePage(driver);
+		HomePage hp=new HomePage(driver);
+		
 		hp.logout();
 	}
 

@@ -2,6 +2,7 @@ package com.dollibar.pom.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -37,6 +38,14 @@ public class HomePage {
 	
 	@FindBy(id = "mainmenua_hrm")
 	WebElement hrmtab;
+	
+	@FindBy(xpath = "//span[@class='hidden-xs maxwidth200 atoploginusername hideonsmartphone paddingleft']")
+	WebElement adminbutton;
+	
+	@FindBy(xpath = "//span[@class='hideonsmartphone']")
+	WebElement logoutbutton;
+	
+	
 	public WebElement getMemberstab() {
 		return memberstab;
 	}
@@ -80,6 +89,15 @@ public class HomePage {
 		memberstab.click();
 		
 		}
+	public void logout()
+	
+	{
+		adminbutton.click();
+		
+		Actions act=new Actions(driver);
+		act.moveToElement(logoutbutton).click();
+		
+	}
 	
 	
 	

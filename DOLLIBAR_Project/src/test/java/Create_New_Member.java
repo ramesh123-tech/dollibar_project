@@ -1,17 +1,19 @@
 import org.testng.annotations.Test;
 
 import com.dollibar.Generic.BaseUtility.BaseClass;
-import com.dollibar.pom.pages.LoginPage;
+import com.dollibar.pom.pages.HomePage;
 
 public class Create_New_Member extends BaseClass {
 		
 	@Test
-	public void create()
+	public void createNewMemberTest()
 	{
-		LoginPage l=new LoginPage(driver);
-		l.getUseredit().sendKeys("admin");
-		l.getPassedit().sendKeys("123456");
-		l.getLoginbutton().click();
+	  System.out.println("launch browser");
+	   HomePage hp=new HomePage(driver);
+	   
+	   hp.logout();
+	   
+	   
 		
 	}
 		

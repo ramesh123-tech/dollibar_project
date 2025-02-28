@@ -5,13 +5,13 @@
     <classes>
       <class name="Create_New_Member">
         <methods>
+          <include name="createNewMemberTest"/>
           <include name="configureAS"/>
           <include name="configureAC"/>
           <include name="configureAM"/>
           <include name="configureBS"/>
           <include name="configureBC"/>
           <include name="configureBM"/>
-          <include name="create"/>
         </methods>
       </class> <!-- Create_New_Member -->
     </classes>

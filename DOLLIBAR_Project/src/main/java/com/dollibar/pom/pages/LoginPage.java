@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.dollibar.WebDriverUtility.WebDriverUtility;
 
-public class LoginPage extends WebDriverUtility {
+public class LoginPage{
 	WebDriver driver;
 	public LoginPage(WebDriver driver)
 	{
@@ -36,10 +36,10 @@ public class LoginPage extends WebDriverUtility {
 		return loginbutton;
 	}
 	
-	public void LogintoApp(String username,String password)
+	public void LogintoApp(String USERNAME,String PASSWORD)
 	{
-		useredit.sendKeys(username);
-		passedit.sendKeys(password);
+		useredit.sendKeys(USERNAME);
+		passedit.sendKeys(PASSWORD);
 		loginbutton.click();
 		
 	}
