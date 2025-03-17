@@ -13,6 +13,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
+import com.dollibar.ExcelUtility.excel_utility;
 import com.dollibar.FileUtility.FileUtility;
 import com.dollibar.Generic.DataBaseUtility.DataBaseUtility;
 import com.dollibar.ListenerUtility.UtilityClassObject;
@@ -27,10 +28,11 @@ public class BaseClass {
 	public WebDriver driver=null;
 	public static WebDriver sdriver=null;
 	
-	WebDriverUtility w=new WebDriverUtility();
-	JavaUtility j=new JavaUtility();
-	FileUtility f=new FileUtility();
-	DataBaseUtility d=new DataBaseUtility();
+	public WebDriverUtility w=new WebDriverUtility();
+	public JavaUtility j=new JavaUtility();
+	public FileUtility f=new FileUtility();
+	public DataBaseUtility d=new DataBaseUtility();
+	public excel_utility e=new excel_utility();
 	
 	@BeforeSuite(alwaysRun = true)
 	public void configureBS() throws SQLException {
@@ -57,6 +59,8 @@ public class BaseClass {
 		}
 		sdriver=driver;
 		UtilityClassObject.setdriver(driver);
+		
+		w.impliwait(driver);
 
 	}
        
@@ -67,7 +71,8 @@ public class BaseClass {
 		String URL = f.getDataFromPropertiesFile("url");
 		String USERNAME = f.getDataFromPropertiesFile("username");
 		String PASSWORD = f.getDataFromPropertiesFile("password");
-		driver.get("http://49.249.28.218:8889/dolibarr/");
+		//driver.get("http://49.249.28.218:8889/dolibarr/");
+		driver.get(URL);
 		lp.LogintoApp(USERNAME, PASSWORD);
 	}
 

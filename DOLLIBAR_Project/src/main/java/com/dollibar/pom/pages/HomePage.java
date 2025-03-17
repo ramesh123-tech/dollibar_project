@@ -15,35 +15,35 @@ public class HomePage {
 	}
 	
 	@FindBy(xpath = "//div[@class='mainmenu members topmenuimage']")
-	WebElement memberstab;
+	private WebElement memberstab;
 	
 	@FindBy(xpath = "//span[text()='Third-parties']")
-	WebElement thirdpartytab;
+	private WebElement thirdpartytab;
 	
 	@FindBy(xpath = "//span[text()='Products | Services']")
-	WebElement productstab;
+	private WebElement productstab;
 	
 	@FindBy(xpath = "//span[text()='MRP']")
-	WebElement mrptab;
+	private WebElement mrptab;
 	
 	@FindBy(xpath = "//span[text()='Commerce']")
-	WebElement commercetab;
+	private WebElement commercetab;
 	
 	@FindBy(xpath = "//span[text()='Billing | Payment']")
-	WebElement billingtab;
+	private WebElement billingtab;
 	
 	
 	@FindBy(xpath = "//span[text()='Banks | Cash']")
-	WebElement bankstab;
+	private WebElement bankstab;
 	
 	@FindBy(id = "mainmenua_hrm")
-	WebElement hrmtab;
+	private WebElement hrmtab;
 	
 	@FindBy(xpath = "//span[@class='hidden-xs maxwidth200 atoploginusername hideonsmartphone paddingleft']")
-	WebElement adminbutton;
+	private WebElement adminbutton;
 	
 	@FindBy(xpath = "//span[@class='hideonsmartphone']")
-	WebElement logoutbutton;
+	private WebElement logoutbutton;
 	
 	
 	public WebElement getMemberstab() {
