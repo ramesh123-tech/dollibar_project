@@ -1,8 +1,5 @@
 package Dollibar;
 
-import static org.testng.Assert.assertEquals;
-
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -21,6 +18,7 @@ public class AddProducts extends BaseClass{
 	@Test
 	public void addproducts() throws Throwable
 	{
+		w.maximize(driver);
 		HomePage hp=new HomePage(driver);	
 		hp.getProductstab().click();
 		
@@ -138,8 +136,6 @@ public class AddProducts extends BaseClass{
 		nmfo.getBillOfMaterialsseachfield().sendKeys(bill);
 		nmfo.getBillOfMaterialsseachfield().sendKeys(Keys.ENTER);
 		nmfo.getSearchbutton().click();
-		
-		
 		
 		
 		

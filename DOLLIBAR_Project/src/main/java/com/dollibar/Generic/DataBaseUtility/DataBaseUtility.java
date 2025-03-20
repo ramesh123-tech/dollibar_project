@@ -1,4 +1,4 @@
-package com.dollibar.Generic.DataBaseUtility;
+ package com.dollibar.Generic.DataBaseUtility;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

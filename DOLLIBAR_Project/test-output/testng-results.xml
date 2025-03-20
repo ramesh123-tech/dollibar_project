@@ -1,41 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-17T10:16:50Z" name="Default suite" finished-at="2025-03-17T10:17:40Z" duration-ms="50447">
+  <suite started-at="2025-03-19T12:54:37Z" name="Default suite" finished-at="2025-03-19T12:55:06Z" duration-ms="28277">
     <groups>
     </groups>
-    <test started-at="2025-03-17T10:16:50Z" name="Default test" finished-at="2025-03-17T10:17:40Z" duration-ms="50447">
-      <class name="Dollibar.AddProducts">
-        <test-method is-config="true" signature="configureBS()[pri:0, instance:Dollibar.AddProducts@536f2a7e]" started-at="2025-03-17T10:16:49Z" name="configureBS" finished-at="2025-03-17T10:16:50Z" duration-ms="1236" status="PASS">
+    <test started-at="2025-03-19T12:54:37Z" name="Default test" finished-at="2025-03-19T12:55:06Z" duration-ms="28277">
+      <class name="MiscellaneousConcepts.Redbus">
+        <test-method signature="redbustest()[pri:0, instance:MiscellaneousConcepts.Redbus@359df09a]" started-at="2025-03-19T12:54:37Z" name="redbustest" finished-at="2025-03-19T12:55:06Z" duration-ms="28208" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- configureBS -->
-        <test-method is-config="true" signature="configureBC()[pri:0, instance:Dollibar.AddProducts@536f2a7e]" started-at="2025-03-17T10:16:50Z" name="configureBC" finished-at="2025-03-17T10:16:54Z" duration-ms="3854" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configureBC -->
-        <test-method is-config="true" signature="configureBM()[pri:0, instance:Dollibar.AddProducts@536f2a7e]" started-at="2025-03-17T10:16:54Z" name="configureBM" finished-at="2025-03-17T10:17:05Z" duration-ms="11071" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configureBM -->
-        <test-method signature="BillOfMaterial()[pri:0, instance:Dollibar.AddProducts@536f2a7e]" started-at="2025-03-17T10:17:05Z" name="BillOfMaterial" finished-at="2025-03-17T10:17:39Z" duration-ms="33999" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BillOfMaterial -->
-        <test-method is-config="true" signature="configureAM()[pri:0, instance:Dollibar.AddProducts@536f2a7e]" started-at="2025-03-17T10:17:39Z" name="configureAM" finished-at="2025-03-17T10:17:40Z" duration-ms="549" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configureAM -->
-        <test-method is-config="true" signature="configureAC()[pri:0, instance:Dollibar.AddProducts@536f2a7e]" started-at="2025-03-17T10:17:40Z" name="configureAC" finished-at="2025-03-17T10:17:40Z" duration-ms="907" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configureAC -->
-        <test-method is-config="true" signature="configureAS()[pri:0, instance:Dollibar.AddProducts@536f2a7e]" started-at="2025-03-17T10:17:41Z" name="configureAS" finished-at="2025-03-17T10:17:41Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configureAS -->
-      </class> <!-- Dollibar.AddProducts -->
+        </test-method> <!-- redbustest -->
+      </class> <!-- MiscellaneousConcepts.Redbus -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

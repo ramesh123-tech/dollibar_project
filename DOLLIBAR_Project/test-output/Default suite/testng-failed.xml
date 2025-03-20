@@ -3,17 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Dollibar.AddProducts">
+      <class name="MiscellaneousConcepts.Redbus">
         <methods>
-          <include name="addproducts"/>
-          <include name="configureAS"/>
-          <include name="configureAC"/>
-          <include name="configureAM"/>
-          <include name="configureBS"/>
-          <include name="configureBC"/>
-          <include name="configureBM"/>
+          <include name="redbustest"/>
         </methods>
-      </class> <!-- Dollibar.AddProducts -->
+      </class> <!-- MiscellaneousConcepts.Redbus -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

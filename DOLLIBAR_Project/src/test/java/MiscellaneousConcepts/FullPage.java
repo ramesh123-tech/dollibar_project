@@ -43,7 +43,7 @@ public class FullPage
 		r.keyRelease(KeyEvent.VK_MINUS);
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 		
-		
+		    
 		AShot shot=new AShot();
 		
 		Screenshot screenshot = shot.shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);

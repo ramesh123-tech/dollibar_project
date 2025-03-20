@@ -23,7 +23,7 @@ import com.dollibar.pom.pages.HomePage;
 import com.dollibar.pom.pages.LoginPage;
 
 
-public class BaseClass {
+public class BaseClass {  
 	
 	public WebDriver driver=null;
 	public static WebDriver sdriver=null;
