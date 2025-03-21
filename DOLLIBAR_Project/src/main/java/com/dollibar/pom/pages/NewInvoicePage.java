@@ -38,6 +38,9 @@ public class NewInvoicePage {
 	@FindBy(xpath = "//select[@class='ui-datepicker-year']")
 	private WebElement year;
 	
+	@FindBy(xpath = "//a[text()='13']")
+	private WebElement date;
+	
 	@FindBy(id = "select2-cond_reglement_id-container")
 	private WebElement paymentTerms;
 	
@@ -58,6 +61,71 @@ public class NewInvoicePage {
 	
 	@FindBy(name = "save")
 	private WebElement createdraftbutton;
+	public WebElement getNewinvoiceLink() {
+		return newinvoiceLink;
+	}
+
+	public WebElement getInvoicelistLink() {
+		return invoicelistLink;
+	}
+
+	public WebElement getCustomer() {
+		return customer;
+	}
+
+	public WebElement getCustomersearchfield() {
+		return customersearchfield;
+	}
+
+	public WebElement getType() {
+		return type;
+	}
+
+	public WebElement getInvoicedate() {
+		return invoicedate;
+	}
+
+	public WebElement getMonth() {
+		return month;
+	}
+
+	public WebElement getYear() {
+		return year;
+	}
+
+	public WebElement getDate() {
+		return date;
+	}
+
+	public WebElement getPaymentTerms() {
+		return paymentTerms;
+	}
+
+	public WebElement getPaymenttermssearch() {
+		return paymenttermssearch;
+	}
+
+	public WebElement getPaymentmethod() {
+		return paymentmethod;
+	}
+
+	public WebElement getPaymentmethodsearch() {
+		return paymentmethodsearch;
+	}
+
+	public WebElement getBankaccount() {
+		return bankaccount;
+	}
+
+	public WebElement getBankaccountsearch() {
+		return bankaccountsearch;
+	}
+
+	public WebElement getCreatedraftbutton() {
+		return createdraftbutton;
+	}
+	
+	
 	
 	
 	
